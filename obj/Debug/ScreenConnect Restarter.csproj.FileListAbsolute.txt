@@ -1,6 +1,0 @@
-d:\matthew\documents\visual studio 2013\Projects\ScreenConnect Restarter\ScreenConnect Restarter\bin\Debug\ScreenConnect Restarter.exe.config
-d:\matthew\documents\visual studio 2013\Projects\ScreenConnect Restarter\ScreenConnect Restarter\bin\Debug\ScreenConnect Restarter.exe
-d:\matthew\documents\visual studio 2013\Projects\ScreenConnect Restarter\ScreenConnect Restarter\bin\Debug\ScreenConnect Restarter.pdb
-d:\matthew\documents\visual studio 2013\Projects\ScreenConnect Restarter\ScreenConnect Restarter\obj\Debug\ScreenConnect Restarter.csprojResolveAssemblyReference.cache
-d:\matthew\documents\visual studio 2013\Projects\ScreenConnect Restarter\ScreenConnect Restarter\obj\Debug\ScreenConnect Restarter.exe
-d:\matthew\documents\visual studio 2013\Projects\ScreenConnect Restarter\ScreenConnect Restarter\obj\Debug\ScreenConnect Restarter.pdb
