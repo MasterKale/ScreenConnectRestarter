@@ -27,15 +27,21 @@ namespace ScreenConnect_Restarter
                     String serviceName = service.DisplayName;
 
                     Console.WriteLine("Found Service: " + serviceName);
-                    Console.WriteLine("Stopping Service");
+
                     try
                     {
-                        service.Stop();
-                        Console.WriteLine("Waiting for Service to enter Stopped state");
-                        service.WaitForStatus(ServiceControllerStatus.Stopped, new TimeSpan(1000));
+                        if (service.Status == ServiceControllerStatus.Running)
+                        {
+                            Console.WriteLine("Stopping Service");
+                            service.Stop();
+                            Console.WriteLine("Waiting for Service to enter Stopped state");
+                            service.WaitForStatus(ServiceControllerStatus.Stopped, new TimeSpan(0, 0, 10));
+                        }
+
                         Console.WriteLine("Restarting Service");
                         service.Start();
-                        service.WaitForStatus(ServiceControllerStatus.Running, new TimeSpan(1000));
+                        Console.WriteLine("Waiting for Service to enter Running state");
+                        service.WaitForStatus(ServiceControllerStatus.Running, new TimeSpan(0, 0, 10));
                     }
                     catch (Exception e)
                     {
